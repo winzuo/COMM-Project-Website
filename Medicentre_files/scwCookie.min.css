@@ -1,0 +1,65 @@
+
+.scw-cookie-toggle {
+	border: 1px solid;
+	box-sizing: border-box;
+	float: left;
+	margin-top: 10px;
+	padding: 5px;
+
+}
+
+.scw-cookie-name {
+	cursor: pointer;
+	float: left;
+	line-height: 23px;
+	padding-left: 15px;
+	width: 80%
+}
+.scw-cookie-toggle input[type=checkbox] {
+	cursor: pointer;
+	float: left;
+	height: 25px;
+	margin: 0;
+	width: 20%
+}
+
+
+.scw-cookie-switch {
+	background: #BDB9A6;
+	border-radius: 1em;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 20px;
+	height: .8em;
+	margin: 0;
+	position: relative;
+	top: 4px;
+	width: 2em
+}
+.scw-cookie-switch.checked {
+	background: #00a5a5
+}
+.scw-cookie-switch.disabled {
+	cursor: not-allowed;
+	opacity: .5
+}
+.scw-cookie-switch input {
+	position: absolute;
+	opacity: 0
+}
+.scw-cookie-switch span {
+	background: #FFF;
+	display: block;
+	border-radius: .8em;
+	box-shadow: 0 .1em .3em rgba(0,0,0,.3);
+	height: .8em;
+	width: 1em;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s
+}
+.scw-cookie-switch input:checked+span {
+	-webkit-transform: translate3d(100%, 0, 0);
+	-moz-transform: translate3d(100%, 0, 0);
+	transform: translate3d(100%, 0, 0)
+}

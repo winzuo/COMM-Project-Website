@@ -1,0 +1,14 @@
+if(!jQuery('.scw-cookie-content').hasClass('scw-cookie-out')){jQuery(document).find('body').addClass('scw-cookie-in');}
+function scwCookieHide()
+{jQuery.post('/cookie-notice',{action:'hide',_token:$("meta[name=csrf-token]").attr("content")}).done(function(data){if(data.hasOwnProperty('success')&&data.success){jQuery('.scw-cookie-content').addClass('scw-cookie-slide-out').slideUp()
+jQuery('.scw-cookie-details').slideUp()
+jQuery(document).find('body').removeClass('scw-cookie-in');}
+if(jQuery('.scw-cookie-content').hasClass('changed')){location.reload();}});}
+function scwCookieDetails()
+{jQuery('.scw-cookie-details').slideToggle();}
+function scwCookieDetailsSettings(){jQuery('.scw-cookie-details').show(0,function(){jQuery('.scw-cookie-content').slideDown()});}
+function scwCookieToggle(element)
+{jQuery(element).closest('.scw-cookie-toggle').find('input[type="checkbox"]').click();}
+function scwCookiePanelToggle()
+{jQuery('.scw-cookie-content').removeClass('scw-cookie-out');if(jQuery(document).find('body').hasClass('scw-cookie-in')){jQuery('.scw-cookie-content').addClass('scw-cookie-slide-out');jQuery(document).find('body').removeClass('scw-cookie-in');}else{jQuery('.scw-cookie-content').removeClass('scw-cookie-slide-out');jQuery(document).find('body').addClass('scw-cookie-in');}}
+jQuery(document).ready(function($){$('.scw-cookie-switch input').each(function(){if($(this).prop('checked')){$(this).closest('.scw-cookie-switch').addClass('checked');}else{$(this).closest('.scw-cookie-switch').removeClass('checked');}});});jQuery(document).on('change','.scw-cookie-toggle input[type="checkbox"]',function(){jQuery(this).closest('.scw-cookie-content').addClass('changed');jQuery(this).closest('.scw-cookie-switch').toggleClass('checked');jQuery.post('/cookie-notice',{action:'toggle',name:jQuery(this).attr('name'),value:jQuery(this).prop('checked'),_token:$("meta[name=csrf-token]").attr("content")}).done(function(data){if(data.hasOwnProperty('removeCookies')){jQuery.each(data.removeCookies,function(key,cookie){Cookies.remove(cookie.name);Cookies.remove(cookie.name,{domain:cookie.domain});Cookies.remove(cookie.name,{path:cookie.path});Cookies.remove(cookie.name,{domain:cookie.domain,path:cookie.path});});}});});jQuery(document).ready(function($){$('.scw-cookie-tooltip-trigger').hover(function(){var label=$(this).attr('data-label');$(this).append('<span class="scw-cookie-tooltip">'+label+'</span>');},function(){$(this).find('.scw-cookie-tooltip').remove();});});jQuery(document).ready(function($){jQuery.post('/cookie-notice',{action:'load',_token:$("meta[name=csrf-token]").attr("content")}).done(function(data){if(data.hasOwnProperty('removeCookies')){jQuery.each(data.removeCookies,function(key,cookie){Cookies.remove(cookie.name);Cookies.remove(cookie.name,{domain:cookie.domain});Cookies.remove(cookie.name,{path:cookie.path});Cookies.remove(cookie.name,{domain:cookie.domain,path:cookie.path});});}});});

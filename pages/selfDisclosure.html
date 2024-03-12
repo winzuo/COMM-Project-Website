@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Survey</title>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .question {
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+  <div class="question">
+    <p>Have you ever had sex with the current husband, wife, or partner of a friend?</p>
+    <input type="radio" id="question1_yes" name="question1" value="yes">
+    <label for="question1_yes">Yes</label>
+    <input type="radio" id="question1_no" name="question1" value="no">
+    <label for="question1_no">No</label>
+    <input type="radio" id="question1_prefer_not" name="question1" value="prefer_not">
+    <label for="question1_prefer_not">Prefer not to answer</label>
+  </div>
+
+  <div class="question">
+    <p>Viewed pornography when unsure whether the subjects were underage?</p>
+    <input type="radio" id="question2_yes" name="question2" value="yes">
+    <label for="question2_yes">Yes</label>
+    <input type="radio" id="question2_no" name="question2" value="no">
+    <label for="question2_no">No</label>
+    <input type="radio" id="question2_prefer_not" name="question2" value="prefer_not">
+    <label for="question2_prefer_not">Prefer not to answer</label>
+  </div>
+
+  <div class="question">
+    <p>Looked at pornographic material?</p>
+    <input type="radio" id="question3_yes" name="question3" value="yes">
+    <label for="question3_yes">Yes</label>
+    <input type="radio" id="question3_no" name="question3" value="no">
+    <label for="question3_no">No</label>
+    <input type="radio" id="question3_prefer_not" name="question3" value="prefer_not">
+    <label for="question3_prefer_not">Prefer not to answer</label>
+</div>
+
+<div class="question">
+    <p>Used sex toys?</p>
+    <input type="radio" id="question4_yes" name="question4" value="yes">
+    <label for="question4_yes">Yes</label>
+    <input type="radio" id="question4_no" name="question4" value="no">
+    <label for="question4_no">No</label>
+    <input type="radio" id="question4_prefer_not" name="question4" value="prefer_not">
+    <label for="question4_prefer_not">Prefer not to answer</label>
+</div>
+
+<div class="question">
+    <p>Smoked marijuana (i.e., pot, weed)?</p>
+    <input type="radio" id="question5_yes" name="question5" value="yes">
+    <label for="question5_yes">Yes</label>
+    <input type="radio" id="question5_no" name="question5" value="no">
+    <label for="question5_no">No</label>
+    <input type="radio" id="question5_prefer_not" name="question5" value="prefer_not">
+    <label for="question5_prefer_not">Prefer not to answer</label>
+</div>
+
+<div class="question">
+    <p>Cheated on your partner while in a relationship?</p>
+    <input type="radio" id="question6_yes" name="question6" value="yes">
+    <label for="question6_yes">Yes</label>
+    <input type="radio" id="question6_no" name="question6" value="no">
+    <label for="question6_no">No</label>
+    <input type="radio" id="question6_prefer_not" name="question6" value="prefer_not">
+    <label for="question6_prefer_not">Prefer not to answer</label>
+</div>
+
+<div class="question">
+    <p>Driven when you were pretty sure you were over the legal blood alcohol level?</p>
+    <input type="radio" id="question7_yes" name="question7" value="yes">
+    <label for="question7_yes">Yes</label>
+    <input type="radio" id="question7_no" name="question7" value="no">
+    <label for="question7_no">No</label>
+    <input type="radio" id="question7_prefer_not" name="question7" value="prefer_not">
+    <label for="question7_prefer_not">Prefer not to answer</label>
+</div>
+
+<div class="question">
+    <p>Taken nude pictures of yourself or a sex partner?</p>
+    <input type="radio" id="question8_yes" name="question8" value="yes">
+    <label for="question8_yes">Yes</label>
+    <input type="radio" id="question8_no" name="question8" value="no">
+    <label for="question8_no">No</label>
+    <input type="radio" id="question8_prefer_not" name="question8" value="prefer_not">
+    <label for="question8_prefer_not">Prefer not to answer</label>
+</div>
+
+<div class="question">
+    <p>Encouraged someone to drink when you were trying to seduce them?</p>
+    <input type="radio" id="question9_yes" name="question9" value="yes">
+    <label for="question9_yes">Yes</label>
+    <input type="radio" id="question9_no" name="question9" value="no">
+    <label for="question9_no">No</label>
+    <input type="radio" id="question9_prefer_not" name="question9" value="prefer_not">
+    <label for="question9_prefer_not">Prefer not to answer</label>
+</div>
+
+<div class="question">
+    <p>Fantasized about having violent non-consensual sex?</p>
+    <input type="radio" id="question10_yes" name="question10" value="yes">
+    <label for="question10_yes">Yes</label>
+    <input type="radio" id="question10_no" name="question10" value="no">
+    <label for="question10_no">No</label>
+    <input type="radio" id="question10_prefer_not" name="question10" value="prefer_not">
+    <label for="question10_prefer_not">Prefer not to answer</label>
+</div>
+
+<div class="question">
+  <p>Tried cocaine?</p>
+  <input type="radio" id="question11_yes" name="question11" value="yes">
+  <label for="question11_yes">Yes</label>
+  <input type="radio" id="question11_no" name="question11" value="no">
+  <label for="question11_no">No</label>
+  <input type="radio" id="question11_prefer_not" name="question11" value="prefer_not">
+  <label for="question11_prefer_not">Prefer not to answer</label>
+</div>
+
+<div class="question">
+  <p>Had sexual thoughts about a member of your same sex?</p>
+  <input type="radio" id="question12_yes" name="question12" value="yes">
+  <label for="question12_yes">Yes</label>
+  <input type="radio" id="question12_no" name="question12" value="no">
+  <label for="question12_no">No</label>
+  <input type="radio" id="question12_prefer_not" name="question12" value="prefer_not">
+  <label for="question12_prefer_not">Prefer not to answer</label>
+</div>
+
+<div class="question">
+  <p>Sold marijuana (i.e., pot, weed) to someone?</p>
+  <input type="radio" id="question13_yes" name="question13" value="yes">
+  <label for="question13_yes">Yes</label>
+  <input type="radio" id="question13_no" name="question13" value="no">
+  <label for="question13_no">No</label>
+  <input type="radio" id="question13_prefer_not" name="question13" value="prefer_not">
+  <label for="question13_prefer_not">Prefer not to answer</label>
+</div>
+
+<div class="question">
+  <p>Watched someone while they undressed, without their knowledge?</p>
+  <input type="radio" id="question14_yes" name="question14" value="yes">
+  <label for="question14_yes">Yes</label>
+  <input type="radio" id="question14_no" name="question14" value="no">
+  <label for="question14_no">No</label>
+  <input type="radio" id="question14_prefer_not" name="question14" value="prefer_not">
+  <label for="question14_prefer_not">Prefer not to answer</label>
+</div>
+
+<div class="question">
+  <p>Had anal sex?</p>
+  <input type="radio" id="question15_yes" name="question15" value="yes">
+  <label for="question15_yes">Yes</label>
+  <input type="radio" id="question15_no" name="question15" value="no">
+  <label for="question15_no">No</label>
+  <input type="radio" id="question15_prefer_not" name="question15" value="prefer_not">
+  <label for="question15_prefer_not">Prefer not to answer</label>
+</div>
+
+<div class="question">
+  <p>Had more than one sexual partner at the same time?</p>
+  <input type="radio" id="question16_yes" name="question16" value="yes">
+  <label for="question16_yes">Yes</label>
+  <input type="radio" id="question16_no" name="question16" value="no">
+  <label for="question16_no">No</label>
+  <input type="radio" id="question16_prefer_not" name="question16" value="prefer_not">
+  <label for="question16_prefer_not">Prefer not to answer</label>
+</div>
+
+<div class="question">
+  <p>Had sex with someone you met the same day?</p>
+  <input type="radio" id="question17_yes" name="question17" value="yes">
+  <label for="question17_yes">Yes</label>
+  <input type="radio" id="question17_no" name="question17" value="no">
+  <label for="question17_no">No</label>
+  <input type="radio" id="question17_prefer_not" name="question17" value="prefer_not">
+  <label for="question17_prefer_not">Prefer not to answer</label>
+</div>
+
+<div class="question">
+  <p>Had sex with someone you met the same day without using a condom?</p>
+  <input type="radio" id="question18_yes" name="question18" value="yes">
+  <label for="question18_yes">Yes</label>
+  <input type="radio" id="question18_no" name="question18" value="no">
+  <label for="question18_no">No</label>
+  <input type="radio" id="question18_prefer_not" name="question18" value="prefer_not">
+  <label for="question18_prefer_not">Prefer not to answer</label>
+</div>
+
+<div class="question">
+  <p>Diagnosed with a sexually transmitted infection?</p>
+  <input type="radio" id="question19_yes" name="question19" value="yes">
+  <label for="question19_yes">Yes</label>
+  <input type="radio" id="question19_no" name="question19" value="no">
+  <label for="question19_no">No</label>
+  <input type="radio" id="question19_prefer_not" name="question19" value="prefer_not">
+  <label for="question19_prefer_not">Prefer not to answer</label>
+</div>
+
+<div class="question">
+  <p>Lied about how recently you were tested for sexually transmitted infections?</p>
+  <input type="radio" id="question20_yes" name="question20" value="yes">
+  <label for="question20_yes">Yes</label>
+  <input type="radio" id="question20_no" name="question20" value="no">
+  <label for="question20_no">No</label>
+  <input type="radio" id="question20_prefer_not" name="question20" value="prefer_not">
+  <label for="question20_prefer_not">Prefer not to answer</label>
+</div>
+
+<div class="question">
+  <p>Neglected to tell a partner about a sexually transmitted disease from which you were suffering?</p>
+  <input type="radio" id="question21_yes" name="question21" value="yes">
+  <label for="question21_yes">Yes</label>
+  <input type="radio" id="question21_no" name="question21" value="no">
+  <label for="question21_no">No</label>
+  <input type="radio" id="question21_prefer_not" name="question21" value="prefer_not">
+  <label for="question21_prefer_not">Prefer not to answer</label>
+</div>
+
+
+  <!-- Repeat the same structure for the remaining questions -->
+
+  <button id="submit">Submit</button>
+
+  <script>
+    document.getElementById('submit').addEventListener('click', function() {
+      // Record answers
+      var answers = {
+        question1: document.querySelector('input[name="question1"]:checked').value,
+        question2: document.querySelector('input[name="question2"]:checked').value,
+        question3: document.querySelector('input[name="question3"]:checked').value,
+        question4: document.querySelector('input[name="question4"]:checked').value,
+        question5: document.querySelector('input[name="question5"]:checked').value,
+        question6: document.querySelector('input[name="question6"]:checked').value,
+        question7: document.querySelector('input[name="question7"]:checked').value,
+        question8: document.querySelector('input[name="question8"]:checked').value,
+        question9: document.querySelector('input[name="question9"]:checked').value,
+        question10: document.querySelector('input[name="question10"]:checked').value,
+        question11: document.querySelector('input[name="question11"]:checked').value,
+        question12: document.querySelector('input[name="question12"]:checked').value,
+        question13: document.querySelector('input[name="question13"]:checked').value,
+        question14: document.querySelector('input[name="question14"]:checked').value,
+        question15: document.querySelector('input[name="question15"]:checked').value,
+        question16: document.querySelector('input[name="question16"]:checked').value,
+        question17: document.querySelector('input[name="question17"]:checked').value,
+        question18: document.querySelector('input[name="question18"]:checked').value,
+        question19: document.querySelector('input[name="question19"]:checked').value,
+        question20: document.querySelector('input[name="question20"]:checked').value,
+        question21: document.querySelector('input[name="question21"]:checked').value
+      };
+
+      // Display answers (for testing)
+      console.log(answers);
+
+      // Send answers to server for recording
+      // Replace this with your actual code to send data to server
+      fetch('record_answers.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(answers),
+      })
+      .then(response => response.json())
+      .then(data => {
+        // Handle response from server if needed
+        console.log(data);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .question {
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+  
+  <div class="question">
+    <label for="question11">Tried cocaine?</label>
+    <select id="question11">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+      <option value="prefer_not">Prefer not to answer</option>
+    </select>
+  </div>
+  
+  <div class="question">
+    <label for="question12">Had sexual thoughts about a member of your same sex?</label>
+    <select id="question12">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+      <option value="prefer_not">Prefer not to answer</option>
+    </select>
+  </div>
+  
+  <div class="question">
+    <label for="question13">Sold marijuana (i.e., pot, weed) to someone?</label>
+    <select id="question13">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+      <option value="prefer_not">Prefer not to answer</option>
+    </select>
+  </div>
+  
+  <div class="question">
+    <label for="question14">Watched someone while they undressed, without their knowledge?</label>
+    <select id="question14">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+      <option value="prefer_not">Prefer not to answer</option>
+    </select>
+  </div>
+  
+  <div class="question">
+    <label for="question15">Had anal sex?</label>
+    <select id="question15">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+      <option value="prefer_not">Prefer not to answer</option>
+    </select>
+  </div>
+
+  <div class="question">
+    <label for="question16">Had more than one sexual partner at the same time?</label>
+    <select id="question16">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+      <option value="prefer_not">Prefer not to answer</option>
+    </select>
+  </div>
+
+  <div class="question">
+    <label for="question17">Had sex with someone you met the same day? </label>
+    <select id="question17">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+      <option value="prefer_not">Prefer not to answer</option>
+    </select>
+  </div>
+
+  <div class="question">
+    <label for="question18">Had sex with someone you met the same day without using a condom?  </label>
+    <select id="question18">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+      <option value="prefer_not">Prefer not to answer</option>
+    </select>
+  </div>
+
+  <div class="question">
+    <label for="question19">Diagnosed with a sexually transmitted infection? </label>
+    <select id="question19">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+      <option value="prefer_not">Prefer not to answer</option>
+    </select>
+  </div>
+
+  <div class="question">
+    <label for="question20">  Lied about how recently you were tested for sexually transmitted infections?    </label>
+    <select id="question20">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+      <option value="prefer_not">Prefer not to answer</option>
+    </select>
+  </div>
+
+  <div class="question">
+    <label for="question21">Neglected to tell a partner about a sexually transmitted disease from which you were suffering?</label>
+    <select id="question21">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+      <option value="prefer_not">Prefer not to answer</option>
+    </select>
+  </div>
+
+<button id="submit">Submit</button>
+
+<script>
+document.getElementById('submit').addEventListener('click', function() {
+  // Record answers
+  var answers = {
+    question1: document.getElementById('question1').value,
+      question2: document.getElementById('question2').value,
+      question3: document.getElementById('question3').value,
+      question4: document.getElementById('question4').value,
+      question5: document.getElementById('question5').value,
+      question6: document.getElementById('question6').value,
+      question7: document.getElementById('question7').value,
+      question8: document.getElementById('question8').value,
+      question9: document.getElementById('question9').value,
+      question10: document.getElementById('question10').value,
+      question11: document.getElementById('question11').value,
+      question12: document.getElementById('question12').value,
+      question13: document.getElementById('question13').value,
+      question14: document.getElementById('question14').value,
+      question15: document.getElementById('question15').value,
+      question16: document.getElementById('question16').value,
+      question17: document.getElementById('question17').value,
+      question18: document.getElementById('question18').value,
+      question19: document.getElementById('question19').value,
+      question20: document.getElementById('question20').value,
+      question21: document.getElementById('question21').value
+  };
+
+  // Display answers (for testing)
+  console.log(answers);
+
+  // Send answers to server for recording
+  // Replace this with your actual code to send data to server
+  fetch('record_answers.php', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(answers),
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Handle response from server if needed
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+});
+</script>
+</body>
+</html> -->
